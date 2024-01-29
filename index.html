@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Portfolio Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/c95febb4ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><strong style="color:red;font-size:50px;font-style:italic">L</strong>axmi.</div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="#first" >Home</a></li>
+                    <li><a href="#about" >About</a></li>
+                    <li><a href="#Portfolio" >Project</a></li>
+                    <li><a href="#Contact" >Contact Me</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="first">
+            <div class="leftsec"><img src="background2.png" alt="image"></div>
+            <div class="rightsec">
+                <b>Hi,<br>My Name is <span class="col">Laxmi</span></b>
+                <div>And I am currently a Master's Student at </div>
+                <span id="element"></span>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="javascript.js" async defer></script>
+    <hr style="border:15px solid grey">
+
+    <!--ABOUT-->  
+    <div id="about">
+        <div class="container">
+        <div class="row">
+        <div class="col1"><h1 class="sub">About Me</h1> 
+        <p>My name is Laxmi Jakhi.Basically, I am from Dehradun,Uttarakhand.
+            About my education,I am pursuing my Master of computer applications from Graphic Era Hill University,Dehradun uttarakhand And 
+            I completed my graduation BCA,from graphic era hill university. 
+            Coming to my family background,there are five members including me,my younger brother and sister,my father and my mother.
+            My hobbies are photography,traveling and i like to visit natural places.Talking about my strengths,I am a quick learner and a determined,focused person.
+            My goal in life is to be successful in life,be financially stable,and support my family.
+        </p>
+        <div class="tab-title">
+            <p class="links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="links" onclick="opentab('Hobbies')">Hobbies</p>
+            <p class="links" onclick="opentab('Education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id=""Skills">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="bar"><i style="color:brown" class='bx bxl-html5'></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                </div>
+
+                <div class="bar"><i style="color:blue" class="bx bxl-css3"></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                </div>
+
+                <div class="bar"><i style="color:yellowgreen"class="bx bxl-javascript"></i>
+                    <div class="info">
+                        <span>Javascript</span>
+                    </div>
+                </div>
+
+                <div class="bar"><i style="color:rgb(180, 10, 104)" class="bx bxl-python"></i>
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <div class="bar"><i style="color:rgb(33, 33, 88)"class="bx bxl-php"></i>
+                    <div class="info">
+                        <span>PHP</span>
+                    </div>
+                </div>
+                <div class="professional">
+                    <h1 class="heading1">Professional Skills</h1>
+                    <div ><span>Communication</span></div>
+                    <div ><span>Creativity</span></div>
+                    <div ><span>Team Management</span></div>
+                </div>
+            </div>
+        <div class="tab-contents" id="Education">
+                <p><span>2024 - Current</span><br>Master of computer applications from Graphic Era Hill University.</p>
+                <p><span>2019 - 2022</span><br>Bachelor of computer applications from Graphic Era Hill University. </p>
+                <p><span>2019</span><br>Higher Secondary School from Will Field School.</p>
+                <p><span>2017</span><br>Secondary School from Will Field School.</p>
+        </div>
+        <div class="tab-contents" id="Hobbies">
+                <p>Travelling💚</p>
+                <p>Dancing💃</p>
+                <p>Listening to music😊</p>
+                <p>Cooking👩‍🍳</p>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <hr style="border:15px solid grey">
+<!--Project-->
+
+<section id="Portfolio">
+    <div class="container">
+        <div class="sub-title"><h1>Projects</h1></div>
+        <div class="work-list">
+            <div class="work">
+                <img src="work1.jpg">
+                <div class="layer">
+                    <h3>Fake News Detection</h3>
+                    <p>The Fake News Detection project aligns with the growing need for 
+                        reliable information in an era of information overload.
+                        Through the application of machine learning techniques, 
+                        this project strives to be a valuable tool in the fight 
+                        against misinformation,promoting a more trustworthy and informed digital society.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+            </div>
+            <div class="work">
+                <img src="work2.jpg">
+                <div class="layer">
+                    <h3>Sentiment Analysis</h3>
+                    <p>The Sentiment Analysis project addresses the growing need for automated tools to understand and interpret the sentiment expressed in textual data.
+                       Through the application of machine learning, this project aims to streamline sentiment analysis processes and contribute to more informed decision-making in various domains.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+            </div>
+            <div class="work">
+                <img src="work3.jpg">
+                <div class="layer">
+                    <h3>Book Recommender System</h3>
+                    <p>The Book Recommender System project aims to enhance the reading experience for users by providing personalized book recommendations. 
+                        By harnessing the power of machine learning, the goal is to help users discover books they may not have found through traditional methods, fostering a love for reading and exploration.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+            </div>
+        </div>
+    <a href="#" class="btn">See More</a>
+    </div>
+</section>
+<hr style="border:15px solid grey">
+
+<!-- -----------------contact-------------------- -->
+<section id="Contact">
+    <div class="container">
+    <div class="row">
+       <div class="Contact-left">
+        <h1 style="margin-top:0px; padding:0%;"class="sub-title">Contact Me</h1>
+        <p><i style="color:rgb(219, 49, 100)" class="fa-solid fa-envelope"></i> Laxmijakhi13@gmail.com</p>
+        <p><i style="color:rgb(219, 49, 100)" class="fa-solid fa-phone"></i> 9105518668</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/viewsoficial_"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://telegram.com/"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <a href="resume.pdf" download class="btn btn2">Download CV</a>
+       </div>
+       <div class="Contact-right">
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Enter your name" required>
+            <input type="email" name="Email" placeholder="Enter your email" required>
+            <input type="text" name="Subject" placeholder="Subject">
+            <textarea name="Message" rows="5" placeholder="Enter your Message"></textarea>
+            <button type="submit" class="btn btn2">submit</button>
+        </form>
+        <span id="msg"></span>
+       </div> 
+    </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ 2024 by Laxmi</p>
+    </div>
+</section>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxKB1_MSNgH-nQA03x8ZQW8iacQRetVRk3db4jIN9-K7_r_Ttbk2MYiV5vxoO5NC-vv/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
